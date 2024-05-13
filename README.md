@@ -40,3 +40,5 @@ root/src/components
 (components & views) siblings
 
 "./views/abc/test.js" || "src/views/abc/test.js" || "@views/abc/test.js"
+
+arrays - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array

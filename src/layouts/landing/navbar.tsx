@@ -1,14 +1,11 @@
 import { NavLink } from "react-router-dom";
+import clsx from "clsx";
 
 const NavItems = [
 	{
 		path: "/",
 		label: "Home",
 	},
-	// {
-	// 	path: "/services",
-	// 	label: "Services",
-	// },
 	{
 		path: "/contact",
 		label: "Contact",
@@ -25,10 +22,19 @@ const LandingNavbar = () => {
 						<NavLink
 							key={idx}
 							to={item.path}
+							// className={({ isActive }) =>
+							// 	isActive ? "font-bold" : ""
+							// }
+							// className={({ isActive }) =>
+							// 	isActive
+							// 		? "font-bold text-primary-default"
+							// 		: "font-bold"
+							// }
 							className={({ isActive }) =>
-								isActive
-									? "text-primary-default"
-									: "text-default"
+								clsx(
+									"font-bold",
+									isActive && "text-primary-default"
+								)
 							}
 						>
 							{item.label}
