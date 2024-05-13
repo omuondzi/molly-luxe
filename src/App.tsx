@@ -1,13 +1,7 @@
-import HeroSection from "@views/hero-section";
-
-("src/");
+import Router from "routes";
 
 const App = () => {
-	return (
-		<main className="min-h-screen">
-			<HeroSection />
-		</main>
-	);
+	return <Router />;
 };
 
 export default App;

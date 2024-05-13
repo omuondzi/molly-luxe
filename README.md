@@ -1,7 +1,7 @@
 1. Vite - power react
 2. Tailwind - css framework - https://tailwindcss.com/docs/guides/vite
 3. NextUi - component based styling (tailwind)
-4. React Router Dom - routing
+4. React Router Dom - routing - https://www.npmjs.com/package/react-router-dom
 5. Axios - fetching data
 6. Typescript - type checks
 7. React Hook Form - manage forms
@@ -9,10 +9,10 @@
 9. React Slick - slider
 10. Yup - form validation
 11. Firebase - hosting alt: vercel
-12. Font
+12. Font - https://fonts.google.com/
 13. Iconify - icon packages
-
--   absolute imports
+14. Lazy loading
+15. clsx
 
 a. pnpm - lightweight (package manager) alt: npm , yarn , bun
 
@@ -21,8 +21,8 @@ Src Folder Structure
 1. components
 2. types
 3. layouts
-4. context - globally
-5. view
+4. context - global states
+5. views
 6. pages
 7. utils / lib - helper functions
 8. styles
@@ -34,6 +34,8 @@ Src Folder Structure
 #### examples
 
 root/src/components
+
+-   absolute imports
 
 (components & views) siblings
 
