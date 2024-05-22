@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				theband: ["Space Mono", "Sans"],
+				theband: ["Urbanist", "Sans"],
 			},
 			colors: {
 				primary: {
