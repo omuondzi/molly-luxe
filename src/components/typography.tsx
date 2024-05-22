@@ -9,7 +9,7 @@ interface TypographyProps {
 export const H1 = ({ children, className }: TypographyProps) => (
 	<h1
 		className={clsx(
-			"text-[1.5rem] xs:text-[1.75rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[4.2rem] 2xl:text-[4.8rem] text-prmary-default",
+			"text-[1.5rem] xs:text-[1rem] md:text-[2.0rem] lg:text-[2.5rem]  2xl:text-[3.5rem] text-prmary-default font-semibold",
 			className
 		)}
 	>
@@ -18,14 +18,14 @@ export const H1 = ({ children, className }: TypographyProps) => (
 );
 
 export const H2 = ({ children, className }: TypographyProps) => (
-	<h1
+	<h2
 		className={clsx(
-			"text-[1.5rem] xs:text-[1.25rem] md:text-[2.0rem] lg:text-[2.5rem] xl:text-[3.5rem] 2xl:text-[4rem] text-prmary-default",
+			"text-[1.75rem]  md:text-[1.75rem] lg:text-[2.25rem]  2xl:text-[2.5rem] text-prmary-default font-semibold",
 			className
 		)}
 	>
 		{children}
-	</h1>
+	</h2>
 );
 
 export const H3 = ({ children, className }: TypographyProps) => (
@@ -47,7 +47,7 @@ export const H6 = ({ children, className }: TypographyProps) => (
 export const Subtitle = ({ children, className }: TypographyProps) => (
 	<p
 		className={clsx(
-			"text-base md:text-lg lg:text-2xl text-primary-600",
+			"text-base md:text-lg lg:text-2xl text-grayish",
 			className
 		)}
 	>
@@ -56,11 +56,11 @@ export const Subtitle = ({ children, className }: TypographyProps) => (
 );
 
 export const Subtitle2 = ({ children, className }: TypographyProps) => (
-	<p className={clsx("text-sm md:text-base  text-primary-600", className)}>
+	<p className={clsx("text-sm md:text-base  text-grayish", className)}>
 		{children}
 	</p>
 );
 
 export const Paragraph = ({ children, className }: TypographyProps) => (
-	<p className={clsx(className)}>{children}</p>
+	<p className={clsx("text-lg", className)}>{children}</p>
 );

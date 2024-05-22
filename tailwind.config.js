@@ -1,42 +1,62 @@
+import { nextui } from "@nextui-org/react";
+
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+	content: [
+		"./index.html",
+		"./src/**/*.{js,ts,jsx,tsx}",
+		"./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+	],
 	theme: {
 		extend: {
 			fontFamily: {
-				theband: ["Urbanist", "Sans"],
+				cred: ["Montserrat", "Sans"],
 			},
 			colors: {
-				primary: {
-					default: "#ce9a9a",
-
-					50: "#ffebeb",
-					100: "#e9caca",
-					200: "#d5a9a9",
-					300: "#c48887",
-					400: "#b26565",
-					500: "#994c4c",
-					600: "#773b3a",
-					700: "#562a2a",
-					800: "#361818",
-					900: "#180505",
-				},
-				secondary: {
-					default: "#eeff56",
-
-					50: "#fbffdc",
-					100: "#f7ffaf",
-					200: "#f2ff7f",
-					300: "#edff4d",
-					400: "#e8ff1f",
-					500: "#cee608",
-					600: "#a1b300",
-					700: "#738000",
-					800: "#444d00",
-					900: "#171b00",
-				},
+				grayish: "#EDE9DD",
+			},
+			backgroundImage: {
+				heroImage: "url('/images/hero.jpg')",
 			},
 		},
 	},
-	plugins: [],
+	darkMode: "class",
+	plugins: [
+		nextui({
+			themes: {
+				credTheme: {
+					colors: {
+						primary: {
+							DEFAULT: "#f64c0d",
+
+							50: "#ffeade",
+							100: "#ffc6b1",
+							200: "#fca382",
+							300: "#fa7f52",
+							400: "#f75b22",
+							500: "#dd4208",
+							600: "#ad3205",
+							700: "#7c2403",
+							800: "#4c1400",
+							900: "#200300",
+						},
+						black: {
+							DEFAULT: "#000000",
+
+							50: "#f2f2f2",
+							100: "#d9d9d9",
+							200: "#bfbfbf",
+							300: "#a6a6a6",
+							400: "#8c8c8c",
+							500: "#737373",
+							600: "#595959",
+							700: "#404040",
+							800: "#262626",
+							900: "#0d0d0d",
+						},
+					},
+				},
+			},
+		}),
+	],
 };

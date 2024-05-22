@@ -1,7 +1,12 @@
-import HomePage from "@pages/home";
+import Providers from "providers";
+import Router from "routes";
 
 const App = () => {
-	return <HomePage />;
+	return (
+		<Providers>
+			<Router />
+		</Providers>
+	);
 };
 
 export default App;
