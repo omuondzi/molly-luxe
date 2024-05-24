@@ -1,17 +1,15 @@
-import { H1, Subtitle2 } from "@components/typography";
-import { Button } from "@nextui-org/react";
-import MissionCard from "./mission-card";
-import VisionSection from "./vision-section";
-import clsx from "clsx";
-import Solutions from "./solution";
-import './home.css'
-import Impact from "./impact";
-import Difference from "./difference";
-import Footer from "./footer";
+import MissionCardAbout from "@views/about/mission-card-about"
+import VisionSectionAbout from "./vision-section-about"
+import { Button } from "@nextui-org/react"
+import { H1, Subtitle2 } from "@components/typography"
+import clsx from "clsx"
+import Footer from "@views/home/footer"
 
-const HomePageView = () => {
-	return (
-		<main className="min-h-screen pb-20">
+
+const AboutPageView = () => {
+    return ( 
+        <>
+        <main className="min-h-screen pb-20">
 			{/* hero section */}
 			<section
 				className={clsx(
@@ -24,12 +22,10 @@ const HomePageView = () => {
 					<section className="container">
 						<section className="md:container flex flex-col gap-5 ">
 							<H1 className="text-grayish ">
-								Empowering Africa's Informal Sector through
-								Technology and Innovation
+								ABOUT US
 							</H1>
 							<Subtitle2 className="md:w-2/3 lg:w-1/2 md:mx-auto">
-								Cred is a social equity tech startup commited to
-								transforming informal workspaces across Africa.
+								Cred is a social equity tech startup committed to closing equity gaps in wealth,education and accessibility by leveraging technology to drive social and financial inclusion for millions. Our mission is to shape the future of work in Africa.
 							</Subtitle2>
 							<Button
 								size="lg"
@@ -41,25 +37,18 @@ const HomePageView = () => {
 							</Button>
 						</section>
 					</section>
-					<MissionCard />
+					<MissionCardAbout />
 				</section>
 			</section>
 			{/* vision */}
-			<VisionSection />
+			<VisionSectionAbout />
+                </main>
 
-			{/* solution */}
-			<Solutions/>
+                {/* Footer  */}
+                <Footer />
 
-			{/* impact */}
-			<Impact/>
-
-			{/* Difference  */}
-			<Difference/>
-
-			{/* Footer  */}
-			<Footer/>
-		</main>
-	);
-};
-
-export default HomePageView;
+                </>
+     );
+}
+ 
+export default AboutPageView;

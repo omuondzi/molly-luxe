@@ -1,5 +1,7 @@
-const ContactPageView = () => {
+import ContactPageView from "@views/contact";
+
+const ContactPage = () => {
 	return <ContactPageView />;
 };
 
-export default ContactPageView;
+export default ContactPage;
