@@ -36,7 +36,7 @@ const SingleServicePageView = ({ service }: SingleServicePageViewProps) => {
 							<AccordionItem
 								key={pointer.title}
 								title={
-									<Subtitle className="text-[#585858] font-semibold">
+									<Subtitle className="!text-[#585858] font-semibold">
 										{pointer.title}
 									</Subtitle>
 								}
@@ -71,7 +71,7 @@ const SingleServicePageView = ({ service }: SingleServicePageViewProps) => {
 							<AccordionItem
 								key={pointer.title}
 								title={
-									<Subtitle className="text-[#585858] font-semibold">
+									<Subtitle className="!text-[#585858] font-semibold">
 										{pointer.title}
 									</Subtitle>
 								}
@@ -122,7 +122,7 @@ const SingleServicePageView = ({ service }: SingleServicePageViewProps) => {
 					<H2 className="text-center font-semibold">
 						Key <i>Features</i> and <i>Benefits</i>
 					</H2>
-					<Subtitle className="text-[#585858] text-center italic my-10">
+					<Subtitle className="!text-[#585858] text-center italic my-10">
 						{service.featuresBenefits[0].subtitle}
 					</Subtitle>
 					{service.featuresBenefits?.map((pointer) => (
@@ -136,7 +136,7 @@ const SingleServicePageView = ({ service }: SingleServicePageViewProps) => {
 									className="text-green-400 text-[20px] md:text-[40px] "
 								/>
 							</section>
-							<Subtitle className="text-[#585858]">
+							<Subtitle className="!text-[#585858]">
 								{pointer.title} : {pointer.content}
 							</Subtitle>
 						</section>

@@ -18,7 +18,7 @@ const Difference = () => {
 			<H2 className="mb-4">
 				Join Us in <i>Making a Difference</i>
 			</H2>
-			<Subtitle2 className="text-[#585858] mb-10">
+			<Subtitle2 className="!text-[#585858] mb-10">
 				Cred is transforming the informal sector inAfrica by creating
 				apportunities , ensuring fair treatment , and fostering
 				sustainable growth
@@ -33,7 +33,7 @@ const Difference = () => {
 								className="text-green-400 text-[20px] md:text-[40px] "
 							/>
 						</section>
-						<Paragraph className="text-[#585858]">
+						<Paragraph className="!text-[#585858]">
 							{point.name}
 						</Paragraph>
 					</section>

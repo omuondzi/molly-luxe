@@ -29,7 +29,7 @@ const LandingFooter = () => {
 					</section>
 				</section>
 				<section className="flex container py-8 md:py-0 items-end flex-col text-end">
-					<Subtitle className="text-[#585858] font-semibold">
+					<Subtitle className="!text-[#585858] font-semibold">
 						Have questions or want to learn more?{" "}
 						<Link className="italic" underline="always">
 							Reach out to us!
@@ -45,7 +45,7 @@ const LandingFooter = () => {
 							className="text-primary"
 						/>
 					</section>
-					<Subtitle2 className="text-[#585858] font-medium">
+					<Subtitle2 className="!text-[#585858] font-medium">
 						Copyright &copy;{" "}
 						{new Date().toLocaleDateString("en-us", {
 							year: "numeric",
