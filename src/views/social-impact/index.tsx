@@ -16,7 +16,7 @@ const SocialImpactPageView = () => {
 
 			{/* our ways */}
 			<section className="container py-20">
-				<Subtitle2 className="text-center my-14 font-semibold text-[#585858]">
+				<Subtitle2 className="text-center my-14 font-semibold !text-[#585858]">
 					{SOCIALIMPACT.waysTitle}
 				</Subtitle2>
 				<Accordion>
@@ -41,7 +41,7 @@ const SocialImpactPageView = () => {
 						>
 							{way.categories.map((category) => (
 								<section key={category.title}>
-									<Subtitle2 className="text-[#585858] font-semibold">
+									<Subtitle2 className="!text-[#585858] font-semibold">
 										{category.title}
 									</Subtitle2>
 									{category?.content.map((cont) => (
@@ -70,7 +70,7 @@ const SocialImpactPageView = () => {
 			{/* measure impact */}
 			<section className="container py-20  text-center max-w-[800px]">
 				<H3 className="font-semibold">{SOCIALIMPACT.impact.title}</H3>
-				<Subtitle2 className="text-[#585858] my-4">
+				<Subtitle2 className="!text-[#585858] my-4">
 					{SOCIALIMPACT.impact.intro}
 				</Subtitle2>
 				{SOCIALIMPACT.impact.measurements.map((measurement) => (
