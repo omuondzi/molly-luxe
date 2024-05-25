@@ -1,10 +1,8 @@
-import LandingNavbar from "@layouts/landing/navbar";
 import { Link } from "react-router-dom";
 
 const NotFoundPage = () => {
 	return (
 		<>
-			<LandingNavbar />
 			<main className="min-h-[80vh] border-t-2 flex flex-col items-center justify-center">
 				<h1 className="mb-4 text-6xl font-semibold text-red-500">
 					404

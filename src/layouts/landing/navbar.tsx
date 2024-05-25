@@ -22,7 +22,7 @@ const LandingNavbar = () => {
 				<section className="lg:hidden">
 					<Icon
 						icon="ci:hamburger-lg"
-						className="text-primary"
+						className="text-primary cursor-pointer"
 						fontSize={40}
 						onClick={updateDrawer}
 					/>
@@ -53,14 +53,14 @@ interface NavItemsWrapperProps {
 }
 
 const NavItemsWrapper = ({ updateDrawer }: NavItemsWrapperProps) => (
-	<section className="flex flex-col lg:flex-row justify-between  lg:items-center  gap-3 lg:gap-5">
+	<section className="flex flex-col lg:flex-row justify-between  lg:items-center  gap-3 xl:gap-5">
 		{NavItems.map((item, idx) => (
 			<NavLink
 				key={idx}
 				to={item.path}
 				className={({ isActive }) =>
 					clsx(
-						"text-lg text-primary font-semibold",
+						"text-sm xl:text-lg text-primary font-semibold",
 						isActive && "underline"
 					)
 				}

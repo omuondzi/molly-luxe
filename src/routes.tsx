@@ -6,6 +6,8 @@ import CredLifePage from "@pages/credlife";
 
 import HomePage from "@pages/home";
 import NotFoundPage from "@pages/not-found";
+import OurServicesPage from "@pages/our-services";
+import SingleServicePage from "@pages/our-services/single-service";
 import { useRoutes } from "react-router-dom";
 
 const Router = () => {
@@ -26,19 +28,30 @@ const Router = () => {
 				},
 				//about
 				{
-					path:"/about-us",
-					element: <AboutPage/>
+					path: "/about-us",
+					element: <AboutPage />,
 				},
+				//Our Services
+				{
+					path: "/our-services",
+					element: <OurServicesPage />,
+				},
+				// Single Service
+				{
+					path: "/our-services/:id",
+					element: <SingleServicePage />,
+				},
+
 				//credfy
 				{
-					path:"/credfy",
-					element: <CredfyPage/>
+					path: "/credfy",
+					element: <CredfyPage />,
 				},
 				//credlife
 				{
-					path:"/credlife",
-					element: <CredLifePage/>
-				}
+					path: "/credlife",
+					element: <CredLifePage />,
+				},
 			],
 		},
 		{

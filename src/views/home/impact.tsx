@@ -1,71 +1,50 @@
+import { H2, Paragraph, Subtitle } from "@components/typography";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { Link } from "react-router-dom";
+import { Link } from "@nextui-org/react";
+import { SOCIALIMPACT } from "data/social-impact";
 
-const Impact = () => {
-  const impacts = [
-    {
-      name: "Empowering Gig workers",
-      path: "#",
-    },
+const ImpactSection = () => {
+	return (
+		<section className="bg-primary py-24 text-center text-white">
+			<section className="container">
+				<section className="bg-primary-50 mb-14 bg-joiningHands bg-center bg-cover bg-no-repeat w-[200px] h-[200px] rounded-full mx-auto" />
 
-    {
-      name: "Enhancing Health and Well-Being",
-      path: "#",
-    },
-    {
-      name: "Legal Protection and Advocacy",
-      path: "#",
-    },
-    {
-      name: "Social safety Nets",
-      path: "#",
-    },
-    {
-      name: "Promoting Sustainability",
-      path: "#",
-    },
-    {
-      name: "Gender Equality and Inclusion",
-      path: "#",
-    },
-  ];
+				<H2>
+					The <i>Impact</i>
+				</H2>
+				<Paragraph className="max-w-[600px] mt-4 mb-10 mx-auto">
+					At Cred, our mission is to drive transformative change in
+					Africa's informal sector.Here's how we create value for
+					individials and society as a whole.
+				</Paragraph>
 
-  return (
-    <section className="main-impact-container">
-      <section className="container">
-        <section className="impact">
-          <div className="intro">
-            <div>
-              <img src="./images/credlogo.png" alt="" />
-            </div>
+				<section className="flex flex-col">
+					{SOCIALIMPACT.map((impact) => (
+						<Link key={impact.name} className="text-white" href="#">
+							<section className="flex w-full justify-between items-center px-8 border-4 my-4 py-6">
+								<Subtitle className="font-semibold text-start">
+									{impact.name}
+								</Subtitle>
 
-            <div className="impact-text">
-              <h1>
-                The <i>Impact</i>
-              </h1>
-              At Cred, our mission is to drive transformative change in Africa's
-              informal sector.Here's how we create value for individials and
-              society as a whole.
-            </div>
-          </div>
-
-          <div className="impact-list">
-            {impacts.map((impact) => (
-              <Link to="#"><div className="impact-item" key={impact.name}>
-                <div>{impact.name}</div>
-                <div>
-                  <Icon icon="ep:arrow-right-bold" />
-                </div>
-              </div></Link>
-            ))}
-          </div>
-          <Link to="#"><p className="impact-link">Learn More On How We Measure Our Impact </p></Link>
-
-
-        </section>
-      </section>
-    </section>
-  );
+								<Icon
+									className="text-white"
+									icon="ep:arrow-right-bold"
+								/>
+							</section>
+						</Link>
+					))}
+				</section>
+				<Link
+					href="#"
+					size="lg"
+					underline="always"
+					className="text-[#ffde59] mt-8 font-semibold"
+				>
+					Learn More On How We Measure Our Impact{" "}
+				</Link>
+			</section>
+		</section>
+	);
 };
 
-export default Impact;
+export default ImpactSection;
