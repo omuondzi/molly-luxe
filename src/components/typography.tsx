@@ -62,5 +62,5 @@ export const Subtitle2 = ({ children, className }: TypographyProps) => (
 );
 
 export const Paragraph = ({ children, className }: TypographyProps) => (
-	<p className={clsx("text-lg", className)}>{children}</p>
+	<p className={clsx("", className)}>{children}</p>
 );

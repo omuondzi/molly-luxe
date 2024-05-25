@@ -1,6 +1,13 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import clsx from "clsx";
-import { Button } from "@nextui-org/react";
+import {
+	Button,
+	Dropdown,
+	DropdownItem,
+	DropdownMenu,
+	DropdownTrigger,
+	Link,
+} from "@nextui-org/react";
 import { Icon } from "@iconify/react";
 import CredLogo from "@components/logo";
 import { NavItems } from "./config";
@@ -52,33 +59,88 @@ interface NavItemsWrapperProps {
 	updateDrawer?: () => void;
 }
 
-const NavItemsWrapper = ({ updateDrawer }: NavItemsWrapperProps) => (
-	<section className="flex flex-col lg:flex-row justify-between  lg:items-center  gap-3 xl:gap-5">
-		{NavItems.map((item, idx) => (
-			<NavLink
-				key={idx}
-				to={item.path}
-				className={({ isActive }) =>
-					clsx(
-						"text-sm xl:text-lg text-primary font-semibold",
-						isActive && "underline"
-					)
-				}
-				onClick={() => updateDrawer && updateDrawer()}
-				end
-			>
-				{item.label}
-			</NavLink>
-		))}
+const NavItemsWrapper = ({ updateDrawer }: NavItemsWrapperProps) => {
+	const navigate = useNavigate();
 
-		<Button
-			radius="none"
-			color="primary"
-			className="h-full py-6 px-10"
-			size="lg"
-			onClick={() => updateDrawer && updateDrawer()}
-		>
-			Get Involved
-		</Button>
-	</section>
-);
+	return (
+		<section className="flex flex-col lg:flex-row justify-between  lg:items-center  gap-3 xl:gap-5">
+			{NavItems.map((item, idx) => {
+				if (item.children) {
+					return (
+						<Dropdown
+							key={item.label}
+							radius="sm"
+							className="bg-white border-2  text-primary"
+							type="listbox"
+							showArrow
+							classNames={{
+								base: "!overflow-auto rounded  !h-[400px] thin-scrollbar ",
+							}}
+						>
+							<DropdownTrigger>
+								<section className="flex items-center gap-1 cursor-pointer  text-primary font-semibold">
+									<p className="text-sm xl:text-lg ">
+										{item.label}
+									</p>
+									<Icon icon="ion:caret-down-outline" />
+								</section>
+							</DropdownTrigger>
+							<DropdownMenu
+								aria-label="Dynamic Menu"
+								items={item.children}
+								color="primary"
+								// variant="bordered"
+							>
+								{(child) => (
+									<DropdownItem
+										aria-label={"Dynamic Menu" + child.name}
+										key={child.name}
+										className="font-medium "
+										showDivider
+										onClick={() => {
+											navigate(child.href);
+											updateDrawer && updateDrawer();
+										}}
+									>
+										<p className="text-sm xl:text-lg font-medium ">
+											{child.name}
+										</p>
+									</DropdownItem>
+								)}
+							</DropdownMenu>
+						</Dropdown>
+					);
+				}
+
+				return (
+					<NavLink
+						key={idx}
+						to={item.path}
+						className={({ isActive }) =>
+							clsx(
+								"text-sm xl:text-lg text-primary font-semibold",
+								isActive && "underline"
+							)
+						}
+						onClick={() => updateDrawer && updateDrawer()}
+						end
+					>
+						{item.label}
+					</NavLink>
+				);
+			})}
+
+			<Button
+				radius="none"
+				color="primary"
+				className="h-full py-6 px-10"
+				size="lg"
+				onClick={() => updateDrawer && updateDrawer()}
+				as={Link}
+				href="/get-involved"
+			>
+				Get Involved
+			</Button>
+		</section>
+	);
+};

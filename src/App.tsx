@@ -1,4 +1,5 @@
 import Providers from "providers";
+
 import Router from "routes";
 
 const App = () => {

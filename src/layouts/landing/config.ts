@@ -1,3 +1,5 @@
+import { SOLUTIONS } from "data/solutions";
+
 export const NavItems = [
 	{
 		path: "/",
@@ -10,6 +12,10 @@ export const NavItems = [
 	{
 		path: "/our-services",
 		label: "Our Services",
+		children: SOLUTIONS.map((solution) => ({
+			name: solution.name,
+			href: solution.path,
+		})),
 	},
 	{
 		path: "/social-impact",

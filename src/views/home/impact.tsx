@@ -1,7 +1,9 @@
 import { H2, Paragraph, Subtitle } from "@components/typography";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Link } from "@nextui-org/react";
+
 import { SOCIALIMPACT } from "data/social-impact";
+import { Link as RouterLink } from "react-router-dom";
 
 const ImpactSection = () => {
 	return (
@@ -19,8 +21,12 @@ const ImpactSection = () => {
 				</Paragraph>
 
 				<section className="flex flex-col">
-					{SOCIALIMPACT.map((impact) => (
-						<Link key={impact.name} className="text-white" href="#">
+					{SOCIALIMPACT.ways.map((impact) => (
+						<RouterLink
+							key={impact.name}
+							className="text-white"
+							to="/social-impact"
+						>
 							<section className="flex w-full justify-between items-center px-8 border-4 my-4 py-6">
 								<Subtitle className="font-semibold text-start">
 									{impact.name}
@@ -31,11 +37,12 @@ const ImpactSection = () => {
 									icon="ep:arrow-right-bold"
 								/>
 							</section>
-						</Link>
+						</RouterLink>
 					))}
 				</section>
 				<Link
-					href="#"
+					href="/social-impact"
+					target="_blank"
 					size="lg"
 					underline="always"
 					className="text-[#ffde59] mt-8 font-semibold"

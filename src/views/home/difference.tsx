@@ -1,6 +1,7 @@
 import { H2, Paragraph, Subtitle2 } from "@components/typography";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Button } from "@nextui-org/react";
+import { Link } from "react-router-dom";
 
 const Difference = () => {
 	const points = [
@@ -42,6 +43,8 @@ const Difference = () => {
 
 			<section className="flex items-center justify-center mt-16">
 				<Button
+					as={Link}
+					to="/get-involved"
 					radius="none"
 					variant="bordered"
 					color="primary"

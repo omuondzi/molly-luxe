@@ -3,6 +3,7 @@ import { Button } from "@nextui-org/react";
 import clsx from "clsx";
 
 import MissionCard from "./mission-card";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
 	return (
@@ -29,6 +30,8 @@ const HeroSection = () => {
 							color="primary"
 							radius="none"
 							className="self-center px-16 py-8"
+							as={Link}
+							to="/social-impact"
 						>
 							Learn More
 						</Button>
