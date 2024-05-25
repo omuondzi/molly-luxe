@@ -45,27 +45,132 @@ export const SOCIALIMPACT = {
 		{
 			name: "Enhancing Health and Well-Being",
 			path: "/social-impact#health-and-well-being",
-			categories: [],
+			categories: [
+				{
+					title: "Health and Safety",
+					content: [
+						{
+							title: "Health Insurance",
+							description:
+								"We offer affordable health insurance plans that cover essential medical expenses, providing financial relief and security.",
+						},
+						{
+							title: "Mobile Health Services",
+							description:
+								"By deploying mobile clinics, we bring healthcare directly to underserved communities, ensuring everyone has access to necessary health services.",
+						},
+						{
+							title: "Workplace Safety",
+							description:
+								"Our training programs promote safe working environments, reducing the risk of injuries and accidents.",
+						},
+					],
+				},
+			],
 		},
 		{
 			name: "Legal Protection and Advocacy",
 			path: "/social-impact#legal-protection-and-advocacy",
-			categories: [],
+			categories: [
+				{
+					title: "Access to Justice",
+					content: [
+						{
+							title: "Legal Aid",
+							description:
+								"We provide affordable legal counseling and representation, helping workers resolve legal issues and protect their rights.",
+						},
+						{
+							title: "Rights Education",
+							description:
+								"Through educational programs, we inform workers about their legal rights, empowering them to advocate for themselves.",
+						},
+					],
+				},
+			],
 		},
 		{
 			name: "Social safety Nets",
 			path: "/social-impact#social-safety-nets",
-			categories: [],
+			categories: [
+				{
+					title: "Community Support",
+					content: [
+						{
+							title: "Emergency Assistance",
+							description:
+								"Our financial assistance programs offer support during emergencies, such as health crises or job loss, helping workers and their families stay afloat.",
+						},
+						{
+							title: "Insurance Products",
+							description:
+								"We develop tailored insurance products that cover health, life, and accident risks, providing a safety net for informal workers.",
+						},
+					],
+				},
+				{
+					title: "Disaster Resilience",
+					content: [
+						{
+							title: "Preparedness Training",
+							description:
+								"We equip communities with the skills needed for effective disaster preparedness and response.",
+						},
+						{
+							title: "Resilience Programs",
+							description:
+								"Our initiatives build community resilience against natural disasters, ensuring long-term stability and recovery.",
+						},
+					],
+				},
+			],
 		},
 		{
 			name: "Promoting Sustainability",
 			path: "/social-impact#promoting-sustainability",
-			categories: [],
+			categories: [
+				{
+					title: "Environmental Stewardship",
+					content: [
+						{
+							title: "Sustainable Practices",
+							description:
+								"We encourage businesses to adopt environmentally friendly practices, reducing their impact on the environment.",
+						},
+						{
+							title: "Green Technologies",
+							description:
+								"By supporting renewable energy projects and green technologies, we contribute to environmental sustainability and help businesses reduce operational costs.",
+						},
+					],
+				},
+			],
 		},
 		{
 			name: "Gender Equality and Inclusion",
 			path: "/social-impact#gender-equality-and-inclusion",
-			categories: [],
+			categories: [
+				{
+					title: "Empowering Women",
+					content: [
+						{
+							title: "Targeted Programs",
+							description:
+								"Our initiatives provide women with the skills and resources needed to thrive in the informal sector.",
+						},
+						{
+							title: "Support Services",
+							description:
+								"We offer services for survivors of gender-based violence, including counseling and legal aid.",
+						},
+						{
+							title: "Work-Life Balance",
+							description:
+								"Our daycare and after-school programs support working parents, ensuring their children are cared for while they work.",
+						},
+					],
+				},
+			],
 		},
 	],
 
@@ -92,6 +197,26 @@ export const SOCIALIMPACT = {
 				title: "Legal Resolutions",
 				content:
 					"Counting the number of legal cases resolved and rights protected through our legal aid services.",
+			},
+			{
+				title: "Social Safety Net Utilization",
+				content:
+					"Evaluating the reach and effectiveness of our financial assistance and insurance programs.",
+			},
+			{
+				title: "Disaster Preparedness",
+				content:
+					"Assessing community readiness and resilience against natural disasters.",
+			},
+			{
+				title: "Environmental Impact",
+				content:
+					"Measuring the adoption of sustainable practices and green technologies by businesses.",
+			},
+			{
+				title: "Gender Inclusion",
+				content:
+					"Tracking the participation and success of women in our programs and their economic contributions.",
 			},
 		],
 	},

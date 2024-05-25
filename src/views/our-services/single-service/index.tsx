@@ -1,8 +1,9 @@
 import { H2, Subtitle, Paragraph, Subtitle2 } from "@components/typography";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { Accordion, AccordionItem } from "@nextui-org/react";
+import { Accordion, AccordionItem, Button, Link } from "@nextui-org/react";
 import SolutionsHero from "@views/components/solutions-hero";
 import { SOLUTION } from "data/solutions";
+import { Link as RouterLink } from "react-router-dom";
 
 interface SingleServicePageViewProps {
 	service: SOLUTION;
@@ -87,15 +88,18 @@ const SingleServicePageView = ({ service }: SingleServicePageViewProps) => {
 								{pointer?.pointers.map((point) => (
 									<section
 										key={point.title}
-										className="my-3 items-center flex gap-3"
+										className="my-3 items-start flex gap-3"
 									>
-										<Icon
-											icon="mdi:dot"
-											className="text-black"
-											fontSize={36}
-										/>
+										<section>
+											<Icon
+												icon="mdi:dot"
+												className="text-black"
+												fontSize={36}
+											/>
+										</section>
 										<Paragraph className="">
-											{point.title} : {point.content[0]}
+											<i>{point.title}</i> :{" "}
+											{point.content[0]}
 										</Paragraph>
 									</section>
 								))}
@@ -134,6 +138,37 @@ const SingleServicePageView = ({ service }: SingleServicePageViewProps) => {
 					))}
 				</section>
 			)}
+
+			<section className="flex flex-col items-center justify-center mt-16">
+				<Button
+					as={RouterLink}
+					to="/get-involved"
+					radius="none"
+					variant="bordered"
+					color="primary"
+					className=" border-4 border-primary text-2xl font-semibold px-10 py-6"
+				>
+					Get Invoved
+				</Button>
+				{service.outro && (
+					<>
+						<Paragraph className="text-center max-w-[800px] mx-auto my-10">
+							{service.outro}
+						</Paragraph>
+
+						<Link
+							href="/social-impact"
+							target="_blank"
+							size="lg"
+							underline="always"
+							className="my-8 font-semibold text-center"
+							color="primary"
+						>
+							Learn More On How We Measure Our Impact{" "}
+						</Link>
+					</>
+				)}
+			</section>
 		</main>
 	);
 };

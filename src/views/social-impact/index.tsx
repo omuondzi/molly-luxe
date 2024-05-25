@@ -3,6 +3,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import { Accordion, AccordionItem, Button } from "@nextui-org/react";
 import SolutionsHero from "@views/components/solutions-hero";
 import { SOCIALIMPACT } from "data/social-impact";
+import { Link } from "react-router-dom";
 
 const SocialImpactPageView = () => {
 	return (
@@ -39,7 +40,7 @@ const SocialImpactPageView = () => {
 							aria-label={way.name + "Ways Accordion Item"}
 						>
 							{way.categories.map((category) => (
-								<section>
+								<section key={category.title}>
 									<Subtitle2 className="text-[#585858] font-semibold">
 										{category.title}
 									</Subtitle2>
@@ -90,6 +91,8 @@ const SocialImpactPageView = () => {
 				))}
 				<section className="flex items-center justify-center mt-16">
 					<Button
+						as={Link}
+						to="/get-involved"
 						radius="none"
 						variant="bordered"
 						color="primary"

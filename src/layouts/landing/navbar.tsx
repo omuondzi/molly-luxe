@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import clsx from "clsx";
 import {
 	Button,
@@ -6,7 +6,6 @@ import {
 	DropdownItem,
 	DropdownMenu,
 	DropdownTrigger,
-	Link,
 } from "@nextui-org/react";
 import { Icon } from "@iconify/react";
 import CredLogo from "@components/logo";
@@ -137,7 +136,7 @@ const NavItemsWrapper = ({ updateDrawer }: NavItemsWrapperProps) => {
 				size="lg"
 				onClick={() => updateDrawer && updateDrawer()}
 				as={Link}
-				href="/get-involved"
+				to="/get-involved"
 			>
 				Get Involved
 			</Button>
