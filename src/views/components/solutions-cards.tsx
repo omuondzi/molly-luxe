@@ -1,4 +1,4 @@
-import { H2, H3, Paragraph, Subtitle, Subtitle2 } from "@components/typography";
+import { H2, H3, Paragraph, Subtitle2 } from "@components/typography";
 import {
 	Button,
 	Card,
