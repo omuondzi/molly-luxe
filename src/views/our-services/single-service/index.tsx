@@ -23,7 +23,7 @@ const SingleServicePageView = ({ service }: SingleServicePageViewProps) => {
 
 			{service.pointers && (
 				<section className="py-16 container">
-					<Accordion variant="light">
+					<Accordion variant="light" defaultExpandedKeys={[service.pointers[0].title]}>
 						{service.pointers?.map((pointer) => (
 							<AccordionItem
 								key={pointer.title}
@@ -57,8 +57,8 @@ const SingleServicePageView = ({ service }: SingleServicePageViewProps) => {
 			{/* grouped pointers */}
 
 			{service.groupedPointers && (
-				<section className="py-16 container">
-					<Accordion variant="light">
+				<section className="py-16 container" >
+					<Accordion variant="light" defaultExpandedKeys={[service.groupedPointers[0].title]}>
 						{service.groupedPointers?.map((pointer) => (
 							<AccordionItem
 								key={pointer.title}
