@@ -8,7 +8,7 @@ import { Link as RouterLink } from "react-router-dom";
 const ImpactSection = () => {
 	return (
 		<section className="bg-primary py-24 text-center text-white">
-			<section className="container">
+			<section className="container max-w-[950px]">
 				<section className="bg-primary-50 mb-14 bg-joiningHands bg-center bg-cover bg-no-repeat w-[200px] h-[200px] rounded-full mx-auto" />
 
 				<H2>

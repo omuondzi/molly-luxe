@@ -5,7 +5,13 @@ import clsx from "clsx";
 import MissionCard from "./mission-card";
 import { Link } from "react-router-dom";
 
-const HeroSection = () => {
+interface HeroSectionProps{
+	title:string,
+	description:string
+}
+
+const HeroSection = ({description,title}:HeroSectionProps) => {
+	
 	return (
 		<section
 			className={clsx(
@@ -18,12 +24,10 @@ const HeroSection = () => {
 				<section className="container">
 					<section className="md:container flex flex-col gap-5 ">
 						<H1 className="text-grayish ">
-							Empowering Africa's Informal Sector through
-							Technology and Innovation
+							{title}
 						</H1>
 						<Subtitle2 className="md:w-2/3 lg:w-1/2 md:mx-auto">
-							Cred is a social equity tech startup commited to
-							transforming informal workspaces across Africa.
+							{description}
 						</Subtitle2>
 						<Button
 							size="lg"

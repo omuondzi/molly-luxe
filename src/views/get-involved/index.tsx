@@ -31,11 +31,12 @@ const GetInvolvedPageView = () => {
 					{GETINVOLVED.stakeholders.map((stakeholder, idx) => (
 						<Button
 							key={idx}
-							variant="bordered"
+							variant={activeStakeholder === idx ? "solid" : "bordered"}
 							color="primary"
 							className=" border-4 border-primary text-2xl font-semibold px-10 py-6"
 							radius="none"
 							onClick={() => setActiveStakeholder(idx)}
+
 						>
 							{stakeholder.name}
 						</Button>

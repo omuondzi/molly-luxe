@@ -19,7 +19,7 @@ const SocialImpactPageView = () => {
 				<Subtitle2 className="text-center my-14 font-semibold !text-[#585858]">
 					{SOCIALIMPACT.waysTitle}
 				</Subtitle2>
-				<Accordion>
+				<Accordion defaultExpandedKeys={SOCIALIMPACT.ways[0].name}>
 					{SOCIALIMPACT.ways.map((way) => (
 						<AccordionItem
 							title={
