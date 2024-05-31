@@ -5,24 +5,29 @@ import HeroSection from "@views/components/hero-section";
 import VisionSection from "@views/components/vision-section";
 
 const HomePageView = () => {
-	return (
-		<main className="min-h-screen pb-20">
-			{/* hero section */}
-			<HeroSection />
+  return (
+    <main className="min-h-screen pb-20">
+      {/* hero section */}
+      <HeroSection
+        title="Empowering Africa's Informal Sector through
+							Technology and Innovation"
+        description="Cred is a social equity tech startup commited to
+							transforming informal workspaces across Africa."
+      />
 
-			{/* vision */}
-			<VisionSection />
+      {/* vision */}
+      <VisionSection />
 
-			{/* solution */}
-			<SolutionsCards />
+      {/* solution */}
+      <SolutionsCards />
 
-			{/* impact */}
-			<ImpactSection />
+      {/* impact */}
+      <ImpactSection />
 
-			{/* Difference  */}
-			<Difference />
-		</main>
-	);
+      {/* Difference  */}
+      <Difference />
+    </main>
+  );
 };
 
 export default HomePageView;
