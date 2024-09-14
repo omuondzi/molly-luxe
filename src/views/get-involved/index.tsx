@@ -1,7 +1,9 @@
 const GetInvolvedPageView = () => {
   return (
     <main>
-      <section></section>
+      <section>
+        <main></main>
+      </section>
     </main>
   );
 };
