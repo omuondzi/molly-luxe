@@ -5,19 +5,19 @@ import LandingNavbar from "./navbar";
 import LandingFooter from "./footer";
 
 const LandingLayout = () => {
-	return (
-		<section>
-			{/* navbar */}
-			<LandingNavbar />
+  return (
+    <section>
+      {/* navbar */}
+      <LandingNavbar />
 
-			{/* content */}
+      {/* content */}
 
-			<Outlet />
+      <Outlet />
 
-			{/* footer */}
-			<LandingFooter />
-		</section>
-	);
+      {/* footer */}
+      <LandingFooter />
+    </section>
+  );
 };
 
 export default LandingLayout;

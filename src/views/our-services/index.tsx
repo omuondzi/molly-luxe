@@ -1,11 +1,5 @@
-import SolutionsCards from "@views/components/solutions-cards";
-
-const OurServicesPageView = () => {
-	return (
-		<main className="">
-			<SolutionsCards />
-		</main>
-	);
+const OurProgramsPageView = () => {
+  return <main className=""></main>;
 };
 
-export default OurServicesPageView;
+export default OurProgramsPageView;

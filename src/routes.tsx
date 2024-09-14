@@ -5,63 +5,57 @@ import GetInvolvedPage from "@pages/get-involved";
 
 import HomePage from "@pages/home";
 import NotFoundPage from "@pages/not-found";
-import OurServicesPage from "@pages/our-services";
-import SingleServicePage from "@pages/our-services/single-service";
+import OurProgramsPage from "@pages/our-programs";
+
 import SocialImpactPage from "@pages/social-impact";
 import { useRoutes } from "react-router-dom";
 
 const Router = () => {
-	const routes = useRoutes([
-		{
-			path: "/",
-			element: <LandingLayout />,
-			children: [
-				{
-					element: <HomePage />,
-					index: true,
-					path: "/",
-				},
-				// contact
-				{
-					path: "/contact-us",
-					element: <ContactPage />,
-				},
-				//about
-				{
-					path: "/about-us",
-					element: <AboutPage />,
-				},
-				//Our Services
-				{
-					path: "/our-services",
-					element: <OurServicesPage />,
-				},
-				// Single Service
-				{
-					path: "/our-services/:id",
-					element: <SingleServicePage />,
-				},
+  const routes = useRoutes([
+    {
+      path: "/",
+      element: <LandingLayout />,
+      children: [
+        {
+          element: <HomePage />,
+          index: true,
+          path: "/",
+        },
+        // contact
+        {
+          path: "/contact-us",
+          element: <ContactPage />,
+        },
+        //about
+        {
+          path: "/about-us",
+          element: <AboutPage />,
+        },
 
-				// social-impact
-				{
-					path: "/social-impact",
-					element: <SocialImpactPage />,
-				},
+        // social-impact
+        {
+          path: "/social-impact",
+          element: <SocialImpactPage />,
+        },
+        {
+          path: "/our-programs",
+          element: <OurProgramsPage />,
+        },
 
-				// get-involved
-				{
-					path: "/get-involved",
-					element: <GetInvolvedPage />,
-				},
-			],
-		},
-		{
-			path: "*",
-			element: <NotFoundPage />,
-		},
-	]);
+        // get-involved
+        {
+          path: "/get-involved",
+          element: <GetInvolvedPage />,
+        },
+      ],
+    },
+    {
+      path: "*",
+      element: <NotFoundPage />,
+    },
+  ]);
 
-	return routes;
+  return routes;
 };
 
 export default Router;

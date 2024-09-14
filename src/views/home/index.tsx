@@ -1,31 +1,17 @@
-import ImpactSection from "./impact";
-import Difference from "./difference";
-import SolutionsCards from "@views/components/solutions-cards";
 import HeroSection from "@views/components/hero-section";
-import VisionSection from "@views/components/vision-section";
+import ImpactSection from "./impact";
+import Programs from "./programs";
 
 const HomePageView = () => {
   return (
     <main className="min-h-screen pb-20">
       {/* hero section */}
       <HeroSection
-        title="Empowering Africa's Informal Sector through
-							Technology and Innovation"
-        description="Cred is a social equity tech startup commited to
-							transforming informal workspaces across Africa."
+        title="Luala Community Center"
+        description="Join Us in transforming lives through Education, Shelter and Community Support"
       />
-
-      {/* vision */}
-      <VisionSection />
-
-      {/* solution */}
-      <SolutionsCards />
-
-      {/* impact */}
+      <Programs />
       <ImpactSection />
-
-      {/* Difference  */}
-      <Difference />
     </main>
   );
 };
