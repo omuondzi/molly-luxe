@@ -1,6 +1,7 @@
 import LandingLayout from "@layouts/landing";
 import AboutPage from "@pages/about";
 import ContactPage from "@pages/contact";
+import DonatePage from "@pages/donate";
 import GetInvolvedPage from "@pages/get-involved";
 
 import HomePage from "@pages/home";
@@ -37,6 +38,8 @@ const Router = () => {
           path: "/social-impact",
           element: <SocialImpactPage />,
         },
+
+        //our programs
         {
           path: "/our-programs",
           element: <OurProgramsPage />,
@@ -46,6 +49,12 @@ const Router = () => {
         {
           path: "/get-involved",
           element: <GetInvolvedPage />,
+        },
+
+        //donate
+        {
+          path: "/donate",
+          element: <DonatePage />,
         },
       ],
     },
