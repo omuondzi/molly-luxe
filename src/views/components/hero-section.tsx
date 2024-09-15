@@ -7,9 +7,10 @@ import { Link } from "react-router-dom";
 interface HeroSectionProps {
   title: string;
   description: string;
+  cardActions?: boolean;
 }
 
-const HeroSection = ({ description, title }: HeroSectionProps) => {
+const HeroSection = ({ description, title, cardActions }: HeroSectionProps) => {
   return (
     <section>
       <section className="min-h-[60vh] lg:min-h-[80vh]  flex items-center justify-center flex-col text-center bg-heroImage bg-center bg-cover bg-blend-multiply  bg-black-600">
@@ -32,7 +33,7 @@ const HeroSection = ({ description, title }: HeroSectionProps) => {
           </section>
         </section>
       </section>
-      <MissionCard />
+      {!cardActions && <MissionCard />}
     </section>
   );
 };

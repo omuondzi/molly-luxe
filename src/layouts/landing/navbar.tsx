@@ -61,7 +61,7 @@ const NavItemsWrapper = ({ updateDrawer }: NavItemsWrapperProps) => {
           <NavLink
             key={idx}
             to={item.path}
-            className={({ isActive }) =>
+            className={({ isActive }: any) =>
               clsx(
                 "text-sm xl:text-lg text-primary font-semibold",
                 isActive && "underline"
@@ -93,7 +93,7 @@ const NavItemsWrapper = ({ updateDrawer }: NavItemsWrapperProps) => {
         size="lg"
         onClick={() => updateDrawer && updateDrawer()}
         as={Link}
-        to="/get-involved"
+        to="/donate"
       >
         Donate
       </Button>
