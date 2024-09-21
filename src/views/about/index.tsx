@@ -49,22 +49,22 @@ const AboutPageView = () => {
           <Divider className="bg-primary h-4 w-1/4  md:mt-4" />
         </section>
 
-        <div className="flex flex-col gap-2 py-[2rem] mx-[auto] w-[50%] ">
-          <Paragraph className="flex items-center gap-3 text-primary-500">
+        <div className="flex flex-col gap-2 py-[2rem] mx-[auto]  lg:w-[50%] ">
+          <Paragraph className="md:flex items-center gap-3 text-primary-500">
             <Icon icon="lets-icons:check-fill" fontSize={25} />{" "}
-            <span className="text-primary font-semibold"> Empowerment:</span>
+            <span className="text-primary font-semibold"> Empowerment: </span>
             We believe in empowering individuals through education, skills, and
             resources.
           </Paragraph>
 
-          <Paragraph className="flex items-center gap-3 text-primary-500">
+          <Paragraph className="sm:flex items-center gap-3 text-primary-500">
             <Icon icon="lets-icons:check-fill" fontSize={25} />{" "}
-            <span className="text-primary font-semibold"> Compassion:</span> We
+            <span className="text-primary font-semibold"> Compassion: </span> We
             act with kindness and understanding to support those in need.
           </Paragraph>
-          <Paragraph className="flex items-center gap-3 text-primary-500">
+          <Paragraph className="md:flex items-center gap-3 text-primary-500">
             <Icon icon="lets-icons:check-fill" fontSize={25} />{" "}
-            <span className="text-primary font-semibold">Collaboration:</span>{" "}
+            <span className="text-primary font-semibold">Collaboration: </span>{" "}
             We work hand in hand with local communities and partners to drive
             change.
           </Paragraph>

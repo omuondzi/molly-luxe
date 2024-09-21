@@ -31,7 +31,7 @@ const SuccessStrories = () => {
     <section className="container py-[2rem]">
       <H2>Success Stories</H2>
       <Divider className="bg-primary-200 h-2 w-1/4  md:mt-6" />
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-3 gap-8">
         {stories.map((story, index) => (
           <div key={index} className="flex flex-col items-center gap-2 my-5">
             <Image src={story.image} radius="full" />

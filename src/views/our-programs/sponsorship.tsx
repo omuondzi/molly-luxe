@@ -19,14 +19,14 @@ const SponsorshipProgram = () => {
           ensures that vulnerable boys and girls can attend school, receive
           uniforms, and access learning materials.
         </Paragraph>
-        <div className="flex flex-col gap-2 py-[2rem] mx-[auto] w-[90%] md:w-[50%] ">
-          <Paragraph className="flex items-center gap-3 text-primary-500">
+        <div className="flex flex-col gap-2 py-[2rem] mx-[auto] w-[90%] lg:w-[50%] ">
+          <Paragraph className="md:flex items-center gap-3 text-primary-500">
             <Icon icon="lets-icons:check-fill" fontSize={25} />{" "}
-            <span className="text-primary font-semibold"> School Fees:</span>
+            <span className="text-primary font-semibold"> School Fees: </span>
             We cover tuition costs for students from vulnerable families.
           </Paragraph>
 
-          <Paragraph className="flex items-center gap-3 text-primary-500">
+          <Paragraph className="md:flex items-center gap-3 text-primary-500">
             <Icon icon="lets-icons:check-fill" fontSize={25} />{" "}
             <span className="text-primary font-semibold">
               Holistic Support:
@@ -34,7 +34,7 @@ const SponsorshipProgram = () => {
             Beyond school fees, we provide mentorship and counseling to help
             students thrive.
           </Paragraph>
-          <Paragraph className="flex items-center gap-3 text-primary-500">
+          <Paragraph className="md:flex items-center gap-3 text-primary-500">
             <Icon icon="lets-icons:check-fill" fontSize={25} />{" "}
             <span className="text-primary font-semibold">
               Success Stories:{" "}

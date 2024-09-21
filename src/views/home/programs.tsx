@@ -46,7 +46,7 @@ const Programs = () => {
       </H2>
       <Divider className="bg-primary h-4 w-1/4  md:mt-6" />
 
-      <section className="grid grid-cols-[20%,80%]">
+      <section className=" flex flex-col-reverse lg:grid grid-cols-[20%,80%]">
         <section className="flex flex-row items-end">
           <Button
             radius="none"
