@@ -12,27 +12,32 @@ type FooterLink = {
 const FooterLinks: FooterLink[] = [
   {
     label: "Home",
-    path: "",
+    path: "/",
   },
   {
     label: "About Us",
-    path: "",
+    path: "/about-us",
   },
-  {
-    label: "Get Involved",
-    path: "",
-  },
+
   {
     label: "Our Programs",
-    path: "",
+    path: "/our-programs",
+  },
+  {
+    label: "Social Impact",
+    path: "/social-impact",
   },
   {
     label: "Contact Us",
-    path: "",
+    path: "/contact-us",
+  },
+  {
+    label: "Get Involved",
+    path: "/get-involved",
   },
   {
     label: "Donate",
-    path: "",
+    path: "/donate",
   },
 ];
 

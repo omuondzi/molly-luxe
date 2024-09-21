@@ -1,4 +1,4 @@
-import OurProgramsPageView from "@views/our-services";
+import OurProgramsPageView from "@views/our-programs";
 
 const OurProgramsPage = () => {
   return <OurProgramsPageView />;
