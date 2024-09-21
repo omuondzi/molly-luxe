@@ -1,12 +1,16 @@
 import { H2, Paragraph } from "@components/typography";
-import { Divider } from "@nextui-org/react";
+import { Divider, Image } from "@nextui-org/react";
 
 const WidowsProgram = () => {
   return (
-    <section className="container">
+    <section className="container my-[5rem]">
       <H2>Building Homes For Widows</H2>
       <Divider className="bg-primary-200 h-2 w-1/4  md:mt-6" />
       <section>
+        <Image
+          src="/images/widows.jpg"
+          className="my-6  h-[200px] md:h-[400px] w-[300px] md:w-[500px]"
+        />
         <Paragraph className="my-7">
           Widows in Gem East in Rangwe, HomaBay County often face extreme
           hardship. Through our partnership with local churches, we build safe

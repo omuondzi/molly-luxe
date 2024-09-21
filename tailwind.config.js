@@ -17,7 +17,7 @@ export default {
       },
       backgroundImage: {
         heroImage: "url('/images/images.jpeg')",
-        joiningHands: "url('/images/joining-hands.png')",
+        joiningHands: "url('/images/stem.jpg')",
       },
     },
   },

@@ -6,7 +6,7 @@ import HeroSection from "@views/components/hero-section";
 const GetInvolvedPageView = () => {
   return (
     <main>
-      <HeroSection cardActions title={"GET INVOLVED"} description={""} />
+      <HeroSection cardActions title={"Get Involved"} description={""} />
       <section className="container my-10 ">
         <H2>Volunteer Opportunities</H2>
         <Divider className="bg-primary-200 h-2 w-1/4 " />

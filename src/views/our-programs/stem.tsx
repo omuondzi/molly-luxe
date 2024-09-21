@@ -1,12 +1,16 @@
 import { H2, Paragraph } from "@components/typography";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { Divider } from "@nextui-org/react";
+import { Divider, Image } from "@nextui-org/react";
 
 const STemProgram = () => {
   return (
     <section className="container my-[3rem]">
       <H2>STEM Empowerment</H2>
       <Divider className="bg-primary-200 h-2 w-1/4  md:mt-6" />
+      <Image
+        src="/images/stem.jpg"
+        className="my-6  h-[200px] md:h-[400px] w-[300px] md:w-[500px]"
+      />
       <section>
         <Paragraph className="my-7">
           Our STEM program is designed to spark curiosity and ignite passion for
