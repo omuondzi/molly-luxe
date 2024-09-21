@@ -34,7 +34,7 @@ const DonatePageView = () => {
           Our <i>Donation</i> Scheme
         </H2>
         <Divider className="bg-primary-200 h-2 w-1/4  md:mt-6" />
-        <div className=" my-12 grid grid-cols-3 gap-[5%]">
+        <div className="container my-12 grid md:grid-cols-2 lg:grid-cols-3 gap-[5%]">
           {donations.map((donation: Donation) => (
             <DonationCards donation={donation} />
           ))}
@@ -44,7 +44,7 @@ const DonatePageView = () => {
         <H2>Choose Payment Method</H2>
         <Tabs color="primary">
           <Tab key="mpesa" title="M-Pesa">
-            <section className="grid grid-cols-3 gap-8">
+            <section className="container grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="border-2 border-dotted p-4 rounded-lg">
                 <Icon icon="teenyicons:tick-circle-solid" fontSize={30} />
                 <h3 className="font-semibold py-2">Select a donation</h3>
@@ -91,7 +91,7 @@ const DonatePageView = () => {
             </section>
           </Tab>
           <Tab key="bank" title="Bank Transfer">
-            <section className="grid grid-cols-3 gap-8">
+            <section className="container grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="border-2 border-dotted p-4 rounded-lg">
                 <Icon icon="teenyicons:tick-circle-solid" fontSize={30} />
                 <h3 className="font-semibold py-2">Select a donation</h3>

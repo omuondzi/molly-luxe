@@ -16,9 +16,9 @@ const GetInvolvedPageView = () => {
             passionate about helping others, we have opportunities for you to
             make a difference.{" "}
           </Paragraph>
-          <div className="flex flex-col gap-2 py-[2rem] mx-[auto] w-[90%] md:w-[50%] ">
+          <div className="flex flex-col gap-2 py-[2rem] mx-[auto] w-[90%] lg:w-[50%] ">
             {" "}
-            <Paragraph className="flex items-center gap-3 text-primary-500">
+            <Paragraph className="md:flex items-center gap-3 text-primary-500">
               <Icon icon="lets-icons:check-fill" fontSize={25} />{" "}
               <span className="text-primary font-semibold">
                 STEM Mentorship:
@@ -26,16 +26,16 @@ const GetInvolvedPageView = () => {
               Share your knowledge and experience with young learners through
               workshops or virtual mentoring.
             </Paragraph>{" "}
-            <Paragraph className="flex items-center gap-3 text-primary-500">
+            <Paragraph className="md:flex items-center gap-3 text-primary-500">
               <Icon icon="lets-icons:check-fill" fontSize={25} />{" "}
               <span className="text-primary font-semibold">
                 House Building:
               </span>
               Join us on-site to help construct homes for widows in need.
             </Paragraph>{" "}
-            <Paragraph className="flex items-center gap-3 text-primary-500">
+            <Paragraph className="md:flex items-center gap-3 text-primary-500">
               <Icon icon="lets-icons:check-fill" fontSize={25} />{" "}
-              <span className="text-primary font-semibold">Fundraising:</span>•
+              <span className="text-primary font-semibold">Fundraising:</span>
               Host events or campaigns to raise money for our programs.
             </Paragraph>
           </div>

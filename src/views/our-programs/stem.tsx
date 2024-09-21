@@ -19,20 +19,20 @@ const STemProgram = () => {
           help students develop critical thinking, problem-solving skills, and
           creativity.
         </Paragraph>
-        <div className="flex flex-col gap-2 py-[2rem] mx-[auto] w-[90%] md:w-[50%] ">
-          <Paragraph className="flex items-center gap-3 text-primary-500">
+        <div className="flex flex-col gap-2 py-[2rem] mx-[auto] w-[90%] lg:w-[50%] ">
+          <Paragraph className="md:flex items-center gap-3 text-primary-500">
             <Icon icon="lets-icons:check-fill" fontSize={25} />{" "}
-            <span className="text-primary font-semibold"> Workshops:</span>
+            <span className="text-primary font-semibold"> Workshops: </span>
             Students participate in coding, robotics, and science experiments.
           </Paragraph>
 
-          <Paragraph className="flex items-center gap-3 text-primary-500">
+          <Paragraph className="md:flex items-center gap-3 text-primary-500">
             <Icon icon="lets-icons:check-fill" fontSize={25} />{" "}
             <span className="text-primary font-semibold"> Mentorship: </span> We
             connect students with professionals in STEM fields for guidance and
             support.
           </Paragraph>
-          <Paragraph className="flex items-center gap-3 text-primary-500">
+          <Paragraph className="md:flex items-center gap-3 text-primary-500">
             <Icon icon="lets-icons:check-fill" fontSize={25} />{" "}
             <span className="text-primary font-semibold">Outreach: </span> Our
             team visits schools to introduce STEM opportunities to young
