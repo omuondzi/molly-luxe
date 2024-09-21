@@ -13,7 +13,7 @@ interface HeroSectionProps {
 const HeroSection = ({ description, title, cardActions }: HeroSectionProps) => {
   return (
     <section>
-      <section className="min-h-[60vh] lg:min-h-[80vh]  flex items-center justify-center flex-col text-center bg-heroImage bg-center bg-cover bg-blend-multiply  bg-black-600">
+      <section className="min-h-[60vh] lg:min-h-[80vh]  flex items-center justify-center flex-col text-center bg-joiningHands bg-center bg-cover bg-blend-multiply  bg-black-600">
         <section className="container">
           <section className="md:container flex flex-col gap-5 ">
             <H1 className="text-grayish ">{title}</H1>

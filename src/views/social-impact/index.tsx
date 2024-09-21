@@ -7,7 +7,13 @@ import SuccessStrories from "./stories";
 const SocialImpactPageView = () => {
   return (
     <main>
-      <HeroSection cardActions title={"OUR IMPACT"} description={""} />
+      <HeroSection
+        cardActions
+        title={"Our Impact"}
+        description={
+          "Luala community center serves as a vital hub for connection, learning, and support, fostering unity and growth among its members. It brings people together, offering resources and opportunities that promote personal development and collective well-being. Through its various programs and services, Luala community center strengthens bonds, encourages collaboration, and creates an inclusive environment where individuals of all ages can thrive."
+        }
+      />
       <section className="container my-7">
         <H2>Our Achievements</H2>
         <Divider className="bg-primary-200 h-2 w-1/4  md:mt-6" />

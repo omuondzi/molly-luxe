@@ -1,6 +1,6 @@
 import { H2, Paragraph } from "@components/typography";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { Divider } from "@nextui-org/react";
+import { Divider, Image } from "@nextui-org/react";
 
 const SponsorshipProgram = () => {
   return (
@@ -9,6 +9,10 @@ const SponsorshipProgram = () => {
       <Divider className="bg-primary-200 h-2 w-1/4  md:mt-6" />
 
       <section>
+        <Image
+          src="/images/sponsorship.jpg"
+          className="my-6  h-[200px] md:h-[300px] w-[300px] md:w-[400px]"
+        />
         <Paragraph className="my-7">
           Many children in Gem East in Rangwe, HomaBay County face barriers to
           education due to financial constraints. Our sponsorship program
