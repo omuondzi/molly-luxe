@@ -7,14 +7,7 @@ export const NavItems = [
     path: "/about-us",
     label: "About Us",
   },
-  {
-    path: "/our-programs",
-    label: "Our Programs",
-  },
-  {
-    path: "/social-impact",
-    label: "Social Impact",
-  },
+
   {
     path: "/contact-us",
     label: "Contact Us",

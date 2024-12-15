@@ -6,7 +6,7 @@ import LandingFooter from "./footer";
 
 const LandingLayout = () => {
   return (
-    <section>
+    <section className="bg-secondary">
       {/* navbar */}
       <LandingNavbar />
 

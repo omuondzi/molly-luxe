@@ -10,7 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        cred: ["Montserrat", "Sans"],
+        molly: ["Cinzel Decorative", "serif"],
+        molly2: ["Playfair Display", "serif"],
       },
       colors: {
         grayish: "#EDE9DD",
@@ -28,20 +29,6 @@ export default {
         credTheme: {
           colors: {
             primary: {
-              DEFAULT: "#000000", // #f64c0d
-
-              50: "#f2f2f2",
-              100: "#d9d9d9",
-              200: "#bfbfbf",
-              300: "#a6a6a6",
-              400: "#8c8c8c",
-              500: "#737373",
-              600: "#595959",
-              700: "#404040",
-              800: "#262626",
-              900: "#0d0d0d",
-            },
-            black: {
               DEFAULT: "#000000",
 
               50: "#f2f2f2",
@@ -54,6 +41,20 @@ export default {
               700: "#404040",
               800: "#262626",
               900: "#0d0d0d",
+            },
+            secondary: {
+              DEFAULT: "#edddd0",
+
+              50: "#fcf1e8",
+              100: "#ead7c8",
+              200: "#dabca5",
+              300: "#cca382",
+              400: "#bc885e",
+              500: "#a36e45",
+              600: "#7f5634",
+              700: "#5b3d25",
+              800: "#372415",
+              900: "#160b01",
             },
           },
         },

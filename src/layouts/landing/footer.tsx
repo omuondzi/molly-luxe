@@ -1,3 +1,4 @@
+import MollyLogo from "@components/logo";
 import { Subtitle, Subtitle2 } from "@components/typography";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Button, Input } from "@nextui-org/react";
@@ -18,26 +19,9 @@ const FooterLinks: FooterLink[] = [
     label: "About Us",
     path: "/about-us",
   },
-
-  {
-    label: "Our Programs",
-    path: "/our-programs",
-  },
-  {
-    label: "Social Impact",
-    path: "/social-impact",
-  },
   {
     label: "Contact Us",
     path: "/contact-us",
-  },
-  {
-    label: "Get Involved",
-    path: "/get-involved",
-  },
-  {
-    label: "Donate",
-    path: "/donate",
   },
 ];
 
@@ -61,8 +45,8 @@ const LandingFooter = () => {
   return (
     <footer className=" border-t-3">
       <section className="container py-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-0">
-        <div className="text-[#000000] font-mono font-extrabold text-[90px] pt-5">
-          Luala
+        <div>
+          <MollyLogo />
         </div>
         <div>
           <Subtitle className="text-primary font-semibold">
@@ -81,7 +65,7 @@ const LandingFooter = () => {
             Subscribe to our monthly Newsletter
           </Subtitle2>
           <p className="text-[13px] text-primary-500">
-            Get the latest on Luala Community Center every month
+            Get the latest on Molly Luxe every month
           </p>
           <form onSubmit={handleSubmit(onSubmit)}>
             <Controller

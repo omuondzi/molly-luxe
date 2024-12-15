@@ -1,12 +1,12 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import clsx from "clsx";
-import { Button } from "@nextui-org/react";
 import { Icon } from "@iconify/react";
 import { NavItems } from "./config";
 import { useState } from "react";
 
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
+import MollyLogo from "@components/logo";
 
 const LandingNavbar = () => {
   const [shouldShowSidebar, setShowSidebar] = useState<boolean>(false);
@@ -14,11 +14,11 @@ const LandingNavbar = () => {
   const updateDrawer = () => setShowSidebar((prev) => !prev);
 
   return (
-    <nav className="py-6 ">
-      <section className="container flex justify-between lg:justify-between items-center gap-10">
-        <div className="text-[#000000] font-mono font-extrabold text-[50px]">
-          Luala
-        </div>
+    <nav className="bg-secondary ">
+      <section className="container flex justify-between items-center gap-10">
+        <section className="">
+          <MollyLogo />
+        </section>
 
         <section className="lg:hidden">
           <Icon
@@ -29,7 +29,7 @@ const LandingNavbar = () => {
           />
         </section>
 
-        <section className="hidden basis-4/5 lg:block ">
+        <section className="hidden lg:block ">
           <NavItemsWrapper />
         </section>
       </section>
@@ -55,7 +55,7 @@ interface NavItemsWrapperProps {
 
 const NavItemsWrapper = ({ updateDrawer }: NavItemsWrapperProps) => {
   return (
-    <section className="flex flex-col lg:flex-row justify-between  lg:items-center  gap-3 xl:gap-5">
+    <section className="flex flex-col lg:flex-row lg:items-center justify-between  gap-3 lg:gap-x-[6rem]">
       {NavItems.map((item, idx) => {
         return (
           <NavLink
@@ -74,29 +74,6 @@ const NavItemsWrapper = ({ updateDrawer }: NavItemsWrapperProps) => {
           </NavLink>
         );
       })}
-
-      <Button
-        radius="none"
-        color="primary"
-        className="h-full py-6 px-10"
-        size="lg"
-        onClick={() => updateDrawer && updateDrawer()}
-        as={Link}
-        to="/get-involved"
-      >
-        Get Involved
-      </Button>
-
-      <Button
-        radius="none"
-        className="h-full text-white py-6 px-10 bg-primary-500"
-        size="lg"
-        onClick={() => updateDrawer && updateDrawer()}
-        as={Link}
-        to="/donate"
-      >
-        Donate
-      </Button>
     </section>
   );
 };
